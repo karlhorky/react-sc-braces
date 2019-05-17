@@ -14,4 +14,4 @@ This component is intended for use with React and styled-components. If you're u
 
 ## Credit
 
-Heavily inspired by @lrenhrda's [Codepen](https://codepen.io/lrenhrda/pen/hkLIe).
+Heavily inspired by [Lauren Herda](https://github.com/lrenhrda)'s [Codepen](https://codepen.io/lrenhrda/pen/hkLIe).
