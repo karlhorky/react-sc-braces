@@ -10,7 +10,7 @@ const BraceTop = styled.label`
   color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-width: 35px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   position: relative;
   margin: 0 15px 15px;
   background-image: radial-gradient(
@@ -28,12 +28,13 @@ const BraceTop = styled.label`
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 35px 20px;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
+
   &:before {
     content: '';
     width: 50%;
-    height: 70%;
+    height: 15px;
     border-top: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
     border-left: 1px solid
@@ -45,10 +46,11 @@ const BraceTop = styled.label`
     box-sizing: border-box;
     margin-top: -5px;
   }
+
   &:after {
     content: '';
     width: 50%;
-    height: 70%;
+    height: 15px;
     border-top: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
     border-right: 1px solid
@@ -67,7 +69,7 @@ const BraceBottom = styled.label`
   color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-width: 35px;
-  padding-top: 20px;
+  padding-top: 30px;
   position: relative;
   margin: 15px 15px 0 15px;
   background-image: radial-gradient(
@@ -85,12 +87,13 @@ const BraceBottom = styled.label`
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 35px 20px;
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
+
   &:before {
     content: '';
     width: 50%;
-    height: 70%;
+    height: 15px;
     border-bottom: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
     border-left: 1px solid
@@ -100,12 +103,13 @@ const BraceBottom = styled.label`
     top: 0;
     left: -15px;
     box-sizing: border-box;
-    margin-top: -9px;
+    margin-top: -10px;
   }
+
   &:after {
     content: '';
     width: 50%;
-    height: 70%;
+    height: 15px;
     border-bottom: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
     border-right: 1px solid
@@ -115,17 +119,18 @@ const BraceBottom = styled.label`
     top: 0;
     right: -15px;
     box-sizing: border-box;
-    margin-top: -9px;
+    margin-top: -10px;
   }
 `;
 
 const BraceLeft = styled.label`
   height: ${props => props.height};
+  line-height: ${props => props.height};
+  vertical-align: middle;
   color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-height: 35px;
-  width: 0;
-  padding-right: 20px;
+  padding-right: 30px;
   position: relative;
   margin: 15px 15px 15px 0;
   background-image: radial-gradient(
@@ -145,9 +150,10 @@ const BraceLeft = styled.label`
   background-size: 20px 35px;
   background-position: right center;
   background-repeat: no-repeat;
+
   &:before {
     content: '';
-    width: 70%;
+    width: 15px;
     height: 50%;
     border-left: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
@@ -160,9 +166,10 @@ const BraceLeft = styled.label`
     box-sizing: border-box;
     margin-left: -5px;
   }
+
   &:after {
     content: '';
-    width: 70%;
+    width: 15px;
     height: 50%;
     border-left: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
@@ -179,11 +186,12 @@ const BraceLeft = styled.label`
 
 const BraceRight = styled.label`
   height: ${props => props.height};
+  line-height: ${props => props.height};
+  vertical-align: middle;
   color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-height: 35px;
-  width: 0;
-  padding-left: 20px;
+  padding-left: 30px;
   position: relative;
   margin: 15px 0 15px 15px;
   background-image: radial-gradient(
@@ -201,11 +209,12 @@ const BraceRight = styled.label`
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 20px 35px;
-  background-position: right center;
+  background-position: left center;
   background-repeat: no-repeat;
+
   &:before {
     content: '';
-    width: 70%;
+    width: 15px;
     height: 50%;
     border-right: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
@@ -216,11 +225,12 @@ const BraceRight = styled.label`
     top: -15px;
     left: 0;
     box-sizing: border-box;
-    margin-left: -9px;
+    margin-left: -10px;
   }
+
   &:after {
     content: '';
-    width: 70%;
+    width: 15px;
     height: 50%;
     border-right: 4px solid
       ${props => props.braceColor || props.color || defaults.braceColor};
@@ -231,7 +241,7 @@ const BraceRight = styled.label`
     bottom: -15px;
     left: 0;
     box-sizing: border-box;
-    margin-left: -9px;
+    margin-left: -10px;
   }
 `;
 
