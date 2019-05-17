@@ -12,6 +12,13 @@ This component is intended for use with React and styled-components. If you're u
 
 ## [Demo](https://codesandbox.io/s/reactscbraces-gpjv3)
 
+## Props
+
+- `side`: `top`, `bottom`, `left`, or `right` (defaults to `top`)
+- `braceColor`: CSS color for the curly brace (defaults to `#000`)
+- `width`: width of the `top` and `bottom` side braces
+- `height`: height of the `left` and `right` side braces
+
 ## Credit
 
 Heavily inspired by [Lauren Herda](https://github.com/lrenhrda)'s [Codepen](https://codepen.io/lrenhrda/pen/hkLIe).
