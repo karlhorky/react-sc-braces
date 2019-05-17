@@ -12,6 +12,18 @@ This component is intended for use with React and styled-components. If you're u
 
 ## [Demo](https://codesandbox.io/s/reactscbraces-gpjv3)
 
+## Examples
+
+```jsx
+<Brace side="left" height="120px" braceColor="#fff" />
+
+{/* Default to #000 braceColor */}
+<Brace side="top" width="300px" />
+
+{/* Default to top side and auto width */}
+<Brace />
+```
+
 ## Props
 
 | prop         | values                                       | default |
