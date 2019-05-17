@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const defaults = {
+  braceColor: '#000',
+};
+
 const BraceTop = styled.label`
   width: ${props => props.width};
+  color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-width: 35px;
   padding-bottom: 20px;
@@ -11,27 +16,28 @@ const BraceTop = styled.label`
   background-image: radial-gradient(
       circle at 0 0,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     ),
     radial-gradient(
       circle at 35px 0,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 35px 20px;
   background-position: center top;
   background-repeat: no-repeat;
-
   &:before {
     content: '';
     width: 50%;
     height: 70%;
-    border-top: 4px solid #fff;
-    border-left: 1px solid #fff;
+    border-top: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-left: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-top-left-radius: 30px;
     position: absolute;
     top: 100%;
@@ -39,13 +45,14 @@ const BraceTop = styled.label`
     box-sizing: border-box;
     margin-top: -5px;
   }
-
   &:after {
     content: '';
     width: 50%;
     height: 70%;
-    border-top: 4px solid #fff;
-    border-right: 1px solid #fff;
+    border-top: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-right: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-top-right-radius: 30px;
     position: absolute;
     top: 100%;
@@ -57,6 +64,7 @@ const BraceTop = styled.label`
 
 const BraceBottom = styled.label`
   width: ${props => props.width};
+  color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-width: 35px;
   padding-top: 20px;
@@ -65,27 +73,28 @@ const BraceBottom = styled.label`
   background-image: radial-gradient(
       circle at 0 20px,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     ),
     radial-gradient(
       circle at 35px 20px,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 35px 20px;
   background-position: center bottom;
   background-repeat: no-repeat;
-
   &:before {
     content: '';
     width: 50%;
     height: 70%;
-    border-bottom: 4px solid #fff;
-    border-left: 1px solid #fff;
+    border-bottom: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-left: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-bottom-left-radius: 30px;
     position: absolute;
     top: 0;
@@ -93,13 +102,14 @@ const BraceBottom = styled.label`
     box-sizing: border-box;
     margin-top: -9px;
   }
-
   &:after {
     content: '';
     width: 50%;
     height: 70%;
-    border-bottom: 4px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-right: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-bottom-right-radius: 30px;
     position: absolute;
     top: 0;
@@ -111,6 +121,7 @@ const BraceBottom = styled.label`
 
 const BraceLeft = styled.label`
   height: ${props => props.height};
+  color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-height: 35px;
   width: 0;
@@ -120,27 +131,28 @@ const BraceLeft = styled.label`
   background-image: radial-gradient(
       circle at -0.2px 0,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     ),
     radial-gradient(
       circle at -0.2px 35px,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 20px 35px;
   background-position: right center;
   background-repeat: no-repeat;
-
   &:before {
     content: '';
     width: 70%;
     height: 50%;
-    border-left: 4px solid #fff;
-    border-top: 1px solid #fff;
+    border-left: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-top: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-top-left-radius: 30px;
     position: absolute;
     top: -15px;
@@ -148,13 +160,14 @@ const BraceLeft = styled.label`
     box-sizing: border-box;
     margin-left: -5px;
   }
-
   &:after {
     content: '';
     width: 70%;
     height: 50%;
-    border-left: 4px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-bottom: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-bottom-left-radius: 30px;
     position: absolute;
     bottom: -15px;
@@ -166,6 +179,7 @@ const BraceLeft = styled.label`
 
 const BraceRight = styled.label`
   height: ${props => props.height};
+  color: ${props => props.textColor || props.color || defaults.braceColor};
   display: block;
   min-height: 35px;
   width: 0;
@@ -175,27 +189,28 @@ const BraceRight = styled.label`
   background-image: radial-gradient(
       circle at 20px 0,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     ),
     radial-gradient(
       circle at 20px 35px,
       rgba(255, 255, 255, 0) 15px,
-      #fff 15.5px,
-      #fff 19px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 15.5px,
+      ${props => props.braceColor || props.color || defaults.braceColor} 19px,
       rgba(255, 255, 255, 0) 19.5px
     );
   background-size: 20px 35px;
   background-position: right center;
   background-repeat: no-repeat;
-
   &:before {
     content: '';
     width: 70%;
     height: 50%;
-    border-right: 4px solid #fff;
-    border-top: 1px solid #fff;
+    border-right: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-top: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-top-right-radius: 30px;
     position: absolute;
     top: -15px;
@@ -203,13 +218,14 @@ const BraceRight = styled.label`
     box-sizing: border-box;
     margin-left: -9px;
   }
-
   &:after {
     content: '';
     width: 70%;
     height: 50%;
-    border-right: 4px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-right: 4px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
+    border-bottom: 1px solid
+      ${props => props.braceColor || props.color || defaults.braceColor};
     border-bottom-right-radius: 30px;
     position: absolute;
     bottom: -15px;
