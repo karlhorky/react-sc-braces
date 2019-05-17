@@ -14,12 +14,12 @@ This component is intended for use with React and styled-components. If you're u
 
 ## Props
 
-| prop       | values                                       | default |
-| ---------- | -------------------------------------------- | ------- |
-| side       | `top`, `bottom`, `left`, or `right`          | `top`   |
-| braceColor | CSS color for the curly brace                | `#000`  |
-| width      | width of the `top` and `bottom` side braces  | auto    |
-| height     | height of the `left` and `right` side braces | auto    |
+| prop         | values                                       | default |
+| ------------ | -------------------------------------------- | ------- |
+| `side`       | `top`, `bottom`, `left`, or `right`          | `top`   |
+| `braceColor` | CSS color for the curly brace                | `#000`  |
+| `width`      | width of the `top` and `bottom` side braces  | auto    |
+| `height`     | height of the `left` and `right` side braces | auto    |
 
 ## Credit
 
