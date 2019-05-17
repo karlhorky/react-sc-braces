@@ -15,8 +15,10 @@ This component is intended for use with React and styled-components. If you're u
 ## Examples
 
 ```jsx
-{/* Set brace and text colors to #fff */}
-<Brace side="left" height="120px" color="#fff" />
+{/* Set brace and text colors to #fff, with annotation text */}
+<Brace side="top" width="120px" color="#fff">
+  JavaScript
+</Brace>
 
 {/* Set brace color to crimson (text color defaults to #000) */}
 <Brace side="left" height="120px" braceColor="crimson" />
