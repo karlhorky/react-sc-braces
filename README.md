@@ -1,6 +1,6 @@
-# react-braces
+# react-sc-braces
 
-> Braces to indicate elements in diagrams
+> Braces to indicate elements in diagrams (built in React and styled-components)
 
 <img src="screenshot.png" width="100%" />
 
