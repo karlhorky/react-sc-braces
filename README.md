@@ -8,7 +8,7 @@ For vanilla HTML + CSS, check out the [Codepen](https://codepen.io/karlhorky/pen
 
 ## Install
 
-Just copy and paste [`Brace.js`](./Brace.js) into your codebase. This hasn't been published as a package yet.
+This library is intended for use with React and styled-components. If you're using those libraries already, just copy and paste the component file [`Brace.js`](./Brace.js) into your codebase. This hasn't been published as a package yet.
 
 ## [Demo](https://codesandbox.io/s/reactscbraces-gpjv3)
 
