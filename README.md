@@ -38,8 +38,10 @@ This component is intended for use with React and styled-components. If you're u
 | `color`      | CSS color for both the curly brace and the text | `#000`  |
 | `braceColor` | CSS color for the curly brace                   | `#000`  |
 | `textColor`  | CSS color for the text                          | `#000`  |
-| `width`      | width of the `top` and `bottom` side braces     | auto    |
-| `height`     | height of the `left` and `right` side braces    | auto    |
+| `width`      | width of the `top` and `bottom` side braces     | unset   |
+| `height`     | height of the `left` and `right` side braces    | unset   |
+| `fontSize`   | font size                                       | unset   |
+| `fontFamily` | font family                                     | unset   |
 
 ## Credit
 
