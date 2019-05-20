@@ -8,7 +8,10 @@ const defaults = {
 const BraceTop = styled.label`
   width: ${props => props.width};
   color: ${props => props.textColor || props.color || defaults.braceColor};
-  display: block;
+  font-size: ${props => props.fontSize};
+  font-family: ${props => props.fontFamily};
+  text-align: center;
+  display: inline-block;
   min-width: 35px;
   padding-bottom: 30px;
   position: relative;
@@ -67,7 +70,10 @@ const BraceTop = styled.label`
 const BraceBottom = styled.label`
   width: ${props => props.width};
   color: ${props => props.textColor || props.color || defaults.braceColor};
-  display: block;
+  font-size: ${props => props.fontSize};
+  font-family: ${props => props.fontFamily};
+  text-align: center;
+  display: inline-block;
   min-width: 35px;
   padding-top: 30px;
   position: relative;
@@ -128,7 +134,9 @@ const BraceLeft = styled.label`
   line-height: ${props => props.height};
   vertical-align: middle;
   color: ${props => props.textColor || props.color || defaults.braceColor};
-  display: block;
+  font-size: ${props => props.fontSize};
+  font-family: ${props => props.fontFamily};
+  display: inline-block;
   min-height: 35px;
   padding-right: 30px;
   position: relative;
@@ -189,11 +197,13 @@ const BraceRight = styled.label`
   line-height: ${props => props.height};
   vertical-align: middle;
   color: ${props => props.textColor || props.color || defaults.braceColor};
-  display: block;
+  font-size: ${props => props.fontSize};
+  font-family: ${props => props.fontFamily};
+  display: inline-block;
   min-height: 35px;
   padding-left: 30px;
-  position: relative;
   margin: 15px 0 15px 15px;
+  position: relative;
   background-image: radial-gradient(
       circle at 20px 0,
       rgba(255, 255, 255, 0) 15px,
